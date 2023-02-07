@@ -1,0 +1,163 @@
+*{
+    font-family: $primary-font;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+%flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: $LightGrayishCyan;
+    max-width: 1440px;
+    margin: auto;
+    min-height: 100vh;
+    @extend %flex;
+    .wrapper{
+        width: 80%;
+        margin: auto;
+        @extend %flex;
+        flex-direction: column;
+        gap: 5em;
+        gap
+        .logo{
+            @extend %flex;
+
+        }
+        .main{
+            background-color: white;
+            padding: 3em;
+            border-radius: 2em;
+            width: 80%;
+            margin: auto;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+            .left{
+                @extend %flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 4em;
+                width: 100%;
+                padding: 0em 2em;
+                .bill{
+                    @extend %flex;
+                    flex-direction: column;
+                    align-items:flex-start ;
+                    gap: 1em;
+                    width: 100%;
+                  
+                }
+                .selectTip{
+                    @extend %flex;
+                    flex-wrap: wrap;
+                    gap: 1em;
+                    p{
+                        width: 100%;
+                    }
+                    button{
+                    width: 30%;
+                    border-radius: 0.2em;
+                    font-size: 2em;
+                    border: none;
+                    padding: 0.2em 0;
+                    text-transform: uppercase;
+                    color: $White;
+                    background-color: $VeryDarkCyan;
+                    
+                    }
+                    input{
+                        width: 30%;
+                        border-radius: 0.2em;
+                        font-size: 2em;
+                        border: none;
+                        padding: 0.2em;
+                        background-color: $White;
+                        &::placeholder{
+                            color: rgba($VeryDarkCyan,0.5);
+                        }
+
+                    }
+                }
+                .numberOfPeople{
+                    @extend %flex;
+                    flex-direction: column;
+                    align-items:flex-start ;
+                    gap: 1em;
+                    width: 100%;
+                    
+                    }
+            }.right{
+                background-color: $VeryDarkCyan;
+                padding: 2em;
+                border-radius: 2em;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+
+                width: 100%;
+                // gap: 3em;
+           
+                .tipAmountWrapper{
+                    @extend %flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    .tipAmountLeft{
+                        :first-child{
+                            color: $White;
+                            font-size: 1.3em;
+                        }
+                        :last-child{
+                            color: $GrayishCyan;
+                            font-size: 1em;
+                        }
+                    }
+                    h2{
+                        font-size: 4em;
+                        color: $StrongCyan;
+                    }
+                }
+            
+                .reset{
+                  border-radius: 0.2em;
+                  font-size: 2em;
+                    border: none;
+                    padding: 0.2em 0;
+                    text-transform: uppercase;
+                    color: $VeryDarkCyan;
+                    background-color: rgba($StrongCyan,0.2);
+                    width: 100%;
+                    margin-top: auto
+                }
+            }
+        }
+    }
+}.inpWrapper{
+    @extend %flex;
+    background-color: rgba($LightGrayishCyan,0.2);
+    padding: 0.5em 0.8em;
+    border-radius: 0.5em;
+width: 100%;
+    div{
+        width: 10%;
+        // background-color: $LightGrayishCyan;
+}
+    input{
+    width: 90%;
+    font-size: 2em;
+    border: none;
+    background-color: transparent;
+    color: rgba($VeryDarkCyan,0.5);
+    &::placeholder{
+        color: rgba($VeryDarkCyan,0.5);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./style/main.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="" >
+        </div>
+        <div class="main">
+          <div class="left">
+            <div class="bill">
+              <p>Bill</p>
+              <div class="inpWrapper">
+                
+                  <img src="./images/icon-dollar.svg" alt="">
+               
+                <input dir="rtl" placeholder="0" type="text"  id="bill" onkeyup="calc()" /></div>
+            </div>
+            <div class="selectTip">
+              <p>Select Tip %</p>
+              <button onclick="selectTip('five')" id="five" value="5">5% </button>
+              <button onclick="selectTip('ten')" id="ten" value="10">10%</button>
+              <button onclick="selectTip('fiveteen')" id="fiveteen" value="15">15%</button>
+              <button onclick="selectTip('tweentyfive')" id="tweentyfive" value="25">25%</button>
+              <button onclick="selectTip('fifty')" id="fifty" value="50">50%</button>
+              <input type="text" placeholder="Custom" onchange="selectTip('cust')" name="" id="cust">
+            </div>
+            <div class="numberOfPeople">
+              <p>Number of People</p>
+              <div class="inpWrapper"><img src="./images/icon-person.svg" alt=""><input dir="rtl" placeholder="0" type="text" name="" id="inpNumOfPeople" onkeyup="calc()"></div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="tipAmountWrapper">
+              <div class="tipAmountLeft">
+                <p>Tip Amount</p>
+                <p>/ person</p>
+              </div>
+              <h2 class="h2inp">0.00</h2>
+            </div>
+            <div class="tipAmountWrapper">
+              <div class="tipAmountLeft">
+                <p>Total</p>
+                <p>/ person</p>
+              </div>
+              <h2 class="h2inp">0.00</h2>
+            </div>
+            <button onclick="clearinp()" class="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+             
+
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>

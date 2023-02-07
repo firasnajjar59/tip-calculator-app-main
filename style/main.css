@@ -1,0 +1,155 @@
+* {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.inpWrapper, .container .wrapper .main .right .tipAmountWrapper, .container .wrapper .main .left .numberOfPeople, .container .wrapper .main .left .selectTip, .container .wrapper .main .left .bill, .container .wrapper .main .left, .container .wrapper gap .logo, .container .wrapper, .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: hsl(185deg, 41%, 84%);
+  max-width: 1440px;
+  margin: auto;
+  min-height: 100vh;
+}
+.container .wrapper {
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+  gap: 5em;
+}
+.container .wrapper .main {
+  background-color: white;
+  padding: 3em;
+  border-radius: 2em;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container .wrapper .main .left {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4em;
+  width: 100%;
+  padding: 0em 2em;
+}
+.container .wrapper .main .left .bill {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  width: 100%;
+}
+.container .wrapper .main .left .selectTip {
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.container .wrapper .main .left .selectTip p {
+  width: 100%;
+}
+.container .wrapper .main .left .selectTip button {
+  width: 30%;
+  border-radius: 0.2em;
+  font-size: 2em;
+  border: none;
+  padding: 0.2em 0;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(183deg, 100%, 15%);
+}
+.container .wrapper .main .left .selectTip input {
+  width: 30%;
+  border-radius: 0.2em;
+  font-size: 2em;
+  border: none;
+  padding: 0.2em;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.container .wrapper .main .left .selectTip input::-moz-placeholder {
+  color: rgba(0, 73, 77, 0.5);
+}
+.container .wrapper .main .left .selectTip input:-ms-input-placeholder {
+  color: rgba(0, 73, 77, 0.5);
+}
+.container .wrapper .main .left .selectTip input::placeholder {
+  color: rgba(0, 73, 77, 0.5);
+}
+.container .wrapper .main .left .numberOfPeople {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  width: 100%;
+}
+.container .wrapper .main .right {
+  background-color: hsl(183deg, 100%, 15%);
+  padding: 2em;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.container .wrapper .main .right .tipAmountWrapper {
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .wrapper .main .right .tipAmountWrapper .tipAmountLeft :first-child {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.3em;
+}
+.container .wrapper .main .right .tipAmountWrapper .tipAmountLeft :last-child {
+  color: hsl(184deg, 14%, 56%);
+  font-size: 1em;
+}
+.container .wrapper .main .right .tipAmountWrapper h2 {
+  font-size: 4em;
+  color: hsl(172deg, 67%, 45%);
+}
+.container .wrapper .main .right .reset {
+  border-radius: 0.2em;
+  font-size: 2em;
+  border: none;
+  padding: 0.2em 0;
+  text-transform: uppercase;
+  color: hsl(183deg, 100%, 15%);
+  background-color: rgba(38, 192, 171, 0.2);
+  width: 100%;
+  margin-top: auto;
+}
+
+.inpWrapper {
+  background-color: rgba(197, 228, 231, 0.2);
+  padding: 0.5em 0.8em;
+  border-radius: 0.5em;
+  width: 100%;
+}
+.inpWrapper div {
+  width: 10%;
+}
+.inpWrapper input {
+  width: 90%;
+  font-size: 2em;
+  border: none;
+  background-color: transparent;
+  color: rgba(0, 73, 77, 0.5);
+}
+.inpWrapper input::-moz-placeholder {
+  color: rgba(0, 73, 77, 0.5);
+}
+.inpWrapper input:-ms-input-placeholder {
+  color: rgba(0, 73, 77, 0.5);
+}
+.inpWrapper input::placeholder {
+  color: rgba(0, 73, 77, 0.5);
+}
+.inpWrapper input:focus {
+  outline: none;
+}/*# sourceMappingURL=main.css.map */
